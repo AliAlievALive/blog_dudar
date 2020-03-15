@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+
+<div class="col-md-6 mt-5">
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Выпечка</strong>
+            <h3 class="mb-0">Треугольник</h3>
+            <div class="mb-1 text-muted">13:27</div>
+            <p class="mb-auto">Приготовлено по домашнему рецепту.</p>
+            <a class="stretched-link" href="#">Сделать заказ</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+            <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img" focusable="false" height="250"
+                 preserveAspectRatio="xMidYMid slice" role="img" width="200" xmlns="http://www.w3.org/2000/svg">
+                <title>Placeholder</title>
+                <img alt="..." class="img-thumbnail" src="../Треугольник.jpg">
+                <rect fill="#55595c" height="100%" width="100%"></rect>
+                <text dy=".3em" fill="#eceeef" x="50%" y="50%">Thumbnail</text>
+            </svg>
+        </div>
+    </div>
+</div>
+<br/>
+
+<div th:insert="blocks/footer :: footer"></div>
+</body>
+</html>
